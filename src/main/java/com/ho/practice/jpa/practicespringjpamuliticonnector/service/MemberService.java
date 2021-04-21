@@ -4,12 +4,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.ho.practice.jpa.practicespringjpamuliticonnector.dto.MemberDto;
-import com.ho.practice.jpa.practicespringjpamuliticonnector.entity.Member;
+import com.ho.practice.jpa.practicespringjpamuliticonnector.entity.first.Member;
+import com.ho.practice.jpa.practicespringjpamuliticonnector.repository.first.MemberRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional("firstTransactionManager")
 public class MemberService {
 
 	@Autowired

@@ -1,4 +1,4 @@
-package com.ho.practice.jpa.practicespringjpamuliticonnector.entity;
+package com.ho.practice.jpa.practicespringjpamuliticonnector.entity.first;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
